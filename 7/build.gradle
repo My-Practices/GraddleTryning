@@ -1,0 +1,19 @@
+//primero y ultimo
+
+task compilar {
+    doLast{
+        println 'Compilando proyecto...'
+    }
+}
+task distribuir {
+    onlyIf{
+        //sino cumple no se ejecutara distribuir
+        //comprueba booleanos
+        //codigo java o gruby
+        compilar.didWork
+        //new File('configuracion.xml').exists()
+    }
+    doLast{
+        println "Distribuiyendo mi proyecto..."
+    }
+}

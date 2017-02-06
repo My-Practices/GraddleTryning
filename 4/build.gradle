@@ -1,0 +1,11 @@
+apply plugin: 'java'
+apply plugin: 'application'
+sourceCompatibility = '1.8'
+version = '1.0'
+mainClassName = 'holaMundo'
+
+jar {
+    manifest{
+        attributes 'Main-Class': 'holaMundo'
+    }
+}

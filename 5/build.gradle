@@ -1,0 +1,13 @@
+//dependencia de tareas
+task a << {
+    println 'Estoy ejecutando la tarea A...'
+}
+task b {
+    dependsOn 'a'
+    doLast{
+        println 'Estoy ejecutando la tarea B...'
+    }
+}
+task c(dependsOn: 'b') << {
+    println 'Estoy ejecutando la tarea C...'
+}

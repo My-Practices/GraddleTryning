@@ -1,0 +1,4 @@
+gradle compilar
+gradle -q compilar
+gradle tasks
+gradle setup 

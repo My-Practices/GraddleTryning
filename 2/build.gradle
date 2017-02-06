@@ -1,0 +1,16 @@
+
+task setup {
+    ext{
+        nombre = 'Yuselenin'
+        correo = 'yuselenin_anquise@upeu.edu.pe'
+        proyecto = "myProject"
+        version = '1.0'
+    }
+}
+setup.doLast{
+    //podemos escribir codigo java
+    String nombre = "Anyus"
+    Date ahora = new Date()
+    println 'Hola '+ nombre
+    println 'compilando proyecto: '+ahora
+}

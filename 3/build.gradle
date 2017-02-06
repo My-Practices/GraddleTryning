@@ -1,0 +1,13 @@
+apply plugin: 'java'
+//propiedades modificadores del plugin son globales
+//esto lo usar el plugin de java al momento de compilar
+sourceCompatibility = '1.8'
+version = '1.0'
+
+jar {
+    //cambiar propiedades del archivo .jar
+    manifest{
+        attributes 'Main-Class': 'holaMundo'
+        //,'xxx':'yyy'
+    }
+}

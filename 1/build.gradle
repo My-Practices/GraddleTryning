@@ -1,0 +1,24 @@
+task holamundo <<{
+    println 'Hola mundo'
+}
+task setup {
+    //propiedades: datos que púeden ser accedidos desde otro lugar.
+    ext{
+        nombre = 'Yuselenin'
+        correo = 'yuselenin_anquise@upeu.edu.pe'
+        proyecto = "myProject"
+        version = '1.0'
+    }
+    //forma equivalente
+    ext.apellidos = 'Anquise Jihuaña'
+    // doLast{
+    //     println 'Compilando proyecto: '+proyecto
+    // }
+}
+setup.doLast{
+    println 'ejecutando la compilacion desde '+setup.proyecto
+}
+task compilar{
+    println 'Compilando proyecto '+ setup.nombre + ', version '+ setup.version
+    println 'si hay problemas avisar a '+ setup.correo
+}

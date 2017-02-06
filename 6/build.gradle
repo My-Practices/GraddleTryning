@@ -1,0 +1,15 @@
+//primero y ultimo
+
+task a {
+    println 'Configurando holaMundo'
+    doFirst{
+        println 'holaMundo.doFirst'
+    }
+    doLast{
+        println 'holaMundo..doLast'
+    }
+}
+task b <<{
+    println "ejecutando b"
+}
+b.mustRunAfter a
