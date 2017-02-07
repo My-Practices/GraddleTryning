@@ -1,0 +1,17 @@
+task crearDist << {
+    new File('dist').mkdirs()
+}
+task copiar(type: Copy, dependsOn: crearDist) {
+    from 'tools'
+    into 'dist/tools'
+    //exclude 'licence.md'
+    //include '*.md'
+}
+task ejecutar(type: Exec, dependsOn: copiar){
+    commandLine 'ls', '-lR', 'dist'
+    //commandLine './bashfile.sh'
+
+    //esta linea es para guardar la salida en otro archivo
+    //sino saldra en la consola
+    standardOutput = new FileOutputStream('dist/salida.txt')
+}

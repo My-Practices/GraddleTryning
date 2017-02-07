@@ -1,0 +1,7 @@
+//zip
+task comprimir(type: Zip) {
+    from 'dist'
+    //archiveName 'arccivo.zip'
+    baseName 'miProyecto'
+    version '1.0.0-BETA'
+}

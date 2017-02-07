@@ -1,0 +1,12 @@
+dist:
+total 4
+-rw-rw-r-- 1 yuselenin yuselenin    0 feb  7 11:43 salida.txt
+drwxrwxr-x 2 yuselenin yuselenin 4096 feb  7 11:42 tools
+
+dist/tools:
+total 0
+-rw-rw-r-- 1 yuselenin yuselenin 0 feb  7 11:42 ejecutar.bat
+-rw-rw-r-- 1 yuselenin yuselenin 0 feb  7 11:42 ejecutar.sh
+-rw-rw-r-- 1 yuselenin yuselenin 0 feb  7 11:42 licence.md
+-rw-rw-r-- 1 yuselenin yuselenin 0 feb  7 11:42 notes.txt
+-rw-rw-r-- 1 yuselenin yuselenin 0 feb  7 11:42 reedme.md

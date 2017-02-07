@@ -17,3 +17,4 @@ task distribuir {
         println "Distribuiyendo mi proyecto..."
     }
 }
+compilar.finalizedBy distribuir
